@@ -16,6 +16,11 @@ if(keyboard_check(vk_space)){
 			box.x += _xinput*my_speed;
 			box.y += _yinput*my_speed;		
 		}
+		
+		if (!place_meeting(box.x + _xinput * my_speed, box.y + _yinput * my_speed, obj_wall)) {
+			box.x += _xinput * my_speed;
+			box.y += _yinput * my_speed;
+			}
 	}
 }
 
