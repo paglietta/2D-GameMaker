@@ -1,10 +1,5 @@
-var _right = keyboard_check(vk_right) or keyboard_check(ord("D"));
-var _left = keyboard_check(vk_left) or keyboard_check(ord("A"));
-var _up = keyboard_check(vk_up) or keyboard_check(ord("W"));
-var _down = keyboard_check(vk_down) or keyboard_check(ord("S"));
-
-var _xinput = _right - _left;
-var _yinput = _down - _up;
+_xinput = (keyboard_check(key_right) || keyboard_check(key_alt_right)) - (keyboard_check(key_left) || keyboard_check(key_alt_left));
+_yinput = (keyboard_check(key_down) || keyboard_check(key_alt_down)) - (keyboard_check(key_up) || keyboard_check(key_alt_up));
 
 //moving boxes with a specific keybind 
 if(keyboard_check(vk_space)){
