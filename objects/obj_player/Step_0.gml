@@ -17,7 +17,11 @@ if(keyboard_check(vk_space)){
 }
 
 //collision and mov box
-move_and_collide(_xinput * my_speed, _yinput * my_speed, obj_box)
+move_and_collide(_xinput * my_speed, _yinput * my_speed, my_tilemap)
+
+if (health <= 0) {
+    game_restart();
+}
 
 //backwards movement
 if(_xinput > 0){

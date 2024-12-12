@@ -15,6 +15,10 @@ key_alt_down = ord("S");
 _xinput = 0;
 _yinput = 0;
 
+health = 3;
+
+my_tilemap = layer_tilemap_get_id("Tiles_1");
+
 walk_right_start = 0;
 walk_right_end = 3;
 walk_left_start = 4;
